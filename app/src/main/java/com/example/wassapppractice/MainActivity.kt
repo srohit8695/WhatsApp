@@ -21,6 +21,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.wassapppractice.ui.theme.WassappPracticeTheme
 import com.example.wassapppractice.ui.theme.wassAppThemeColor
+import com.example.wassapppractice.views.WhatsAppCalls
+import com.example.wassapppractice.views.WhatsAppChat
+import com.example.wassapppractice.views.WhatsAppStatus
 import com.google.accompanist.pager.*
 import kotlinx.coroutines.launch
 
@@ -146,9 +149,9 @@ class MainActivity : ComponentActivity() {
     fun TabsContent(pagerState: PagerState) {
         HorizontalPager(state = pagerState) {page ->
             when(page){
-                /*0 -> WhatsAppChat()
+                0 -> WhatsAppChat()
                 1 -> WhatsAppStatus()
-                2 -> WhatsAppCalls()*/
+                2 -> WhatsAppCalls()
             }
         }
     }
